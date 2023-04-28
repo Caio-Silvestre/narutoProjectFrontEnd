@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
-import bg from "../assets/bg.jpg"
+import bg from "../assets/bg2.png"
 
 export default createGlobalStyle`
  ::-webkit-scrollbar {
