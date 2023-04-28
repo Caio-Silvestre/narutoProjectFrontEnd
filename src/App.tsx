@@ -13,11 +13,11 @@ function App() {
 
       <Routes>
         <Route path={"*"} element={<Home/>}/>
-        {/* <Route path={"/home"} element={<Home/>} />
+        <Route path={"/home"} element={<Home/>} />
         <Route path={"/clans"} element={<Home/>} />
         <Route path={"/clans/:idClan"} element={<Home/>} />
         <Route path={"/shinobis"} element={<Home/>} />
-      <Route path={"/shinobis/:idCharacter"} element={<Home/>} /> */}
+        <Route path={"/shinobis/:idCharacter"} element={<Home/>} />
       </Routes>
 
     </CharacterProvider>

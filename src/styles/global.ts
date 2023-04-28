@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
-import bg from "../assets/bg2.png"
+import bg from "../assets/bg2.svg"
 
 export default createGlobalStyle`
  ::-webkit-scrollbar {
@@ -20,10 +20,10 @@ export default createGlobalStyle`
 
   :root {
     // Brand
-    --brand1: #4529E6;
-    --brand2: #5126EA;
-    --brand3: #B0A6F0;
-    --brand4: #EDEAFD;
+    --brand1: #e6733a;
+    --brand2: #de5238;
+    --brand3: #f0bc34;
+    --brand4: #202957;
 
     // Grey
     --grey0: #0B0D0D;
@@ -47,22 +47,17 @@ export default createGlobalStyle`
     --suecess2: #CCEBD7;
     --suecess3: #DDF3E4;
 
-    // Colors Random Profile
-    --random1: #E34D8C;
-    --random2: #C04277;
-    --random3: #7D2A4D;
-    --random4: #7000FF;
-    --random5: #6200E3;
-    --random6: #36007D;
-    --random7: #349974;
-    --random8: #2A7D5F;
-    --random9: #153D2E;
-    --random10: #6100FF;
-    --random11: #5700E3;
-    --random12: #30007D;
+    // Konoha Profile
+    --konoha1: #282828;
+    --konoha2: #d7cfa6;
+    --konoha3: #a9975e;
+    --konoha4: #365760;
+    --konoha5: #5a7a75;
+    --konoha6: #2e5244;
+    --konoha7: #93b96e;
 
-    --bebas-font: 'Bebas Neue', cursive;
-    --yatra-font: 'Yatra One', cursive;
+    --principal-font: 'Bebas Neue', cursive;
+    --curisve-font: 'Permanent Marker', cursive;
   }
 
   * {
@@ -74,10 +69,11 @@ export default createGlobalStyle`
   
   body,html {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-image: url(${bg});
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     font-family: var(--bebas-font);
@@ -109,8 +105,7 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-    background-color: red;
-    font-family: 'Yatra One', cursive;
+    font-family: var(--curisve-font);
   }
 `
 // export const SeassonTitle = styled.h1`
